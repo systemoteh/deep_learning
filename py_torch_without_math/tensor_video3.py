@@ -14,9 +14,10 @@ tensor = torch.tensor([[[2, 3], [4, 5]], [[5, 7], [8, 9]]],
 print(tensor)
 
 # must have
-print(tensor.shape)
-print(tensor.size())
-print(tensor.ndim)
+print('tensor shape = ', tensor.shape)
+print('tensor size = ', tensor.size())
+print('tensor ndim = ', tensor.ndim)
+print('tensor data type = ', tensor.dtype)
 
 print(tensor[0, 0, 0])  # get tensor
 print(type(tensor[0, 0, 0]))  # type - tensor
