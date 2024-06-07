@@ -13,6 +13,7 @@ tensor = torch.tensor([[[2, 3], [4, 5]], [[5, 7], [8, 9]]],
 
 print(tensor)
 
+# must have
 print(tensor.shape)
 print(tensor.size())
 print(tensor.ndim)
@@ -85,6 +86,7 @@ tensor = tensor.to('cpu')
 # tensor = tensor.cuda()
 # tensor = tensor.to('cuda')
 
+# must have
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 tensor.to(device)
 print(tensor.device)
@@ -95,4 +97,3 @@ new_tensor = tensor + tensor_1.to(device)
 print(new_tensor)
 print(new_tensor.cpu())
 print(new_tensor.cpu().detach())
-
